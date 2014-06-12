@@ -1,2 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?>cardno        pass       Balance
-<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): ++$i;$mod = ($i % 2 )?><?php echo ($vo["cardNo"]); ?>   <?php echo ($vo["pass"]); ?>     <?php echo ($vo["money"]); ?> <?php echo ($cr); ?><?php endforeach; endif; else: echo "" ;endif; ?>
