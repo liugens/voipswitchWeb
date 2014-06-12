@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>{$login}的充值记录</title>
+
+<body>
+<div class="main"><div class="msgDiv">
+<h3>{$login}的充值记录 </h3>
+<p>绑定号码{$phone}
+<br/>
+卡号 &#160; &#160;密码 &#160; 金额<br/> 
+<volist name="list" id="vo">
+{$vo.cardNo}&nbsp;{$vo.pass}&nbsp;{$vo.money} <br/> 
+</volist><br/>
+<include file="footer" /></p>
+</div>
+</div>
+</body>
+</html>

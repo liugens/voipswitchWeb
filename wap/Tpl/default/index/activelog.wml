@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="main" title="我的充值记录" >
+<p align="left" mode="wrap">{$login}的充值记录 ，绑定号码{$phone}
+<br/>
+卡号 &#160; &#160;密码 &#160; 金额<br/> 
+<volist name="list" id="vo">
+{$vo.cardNo} {$vo.pass} {$vo.money} <br/> 
+</volist><br/>
+
+<include file="footer" />
+</p></card>
+</wml>

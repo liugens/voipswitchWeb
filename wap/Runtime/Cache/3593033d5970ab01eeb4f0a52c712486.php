@@ -1,0 +1,47 @@
+<?php if (!defined('THINK_PATH')) exit();?><?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="main" title="菜单" >
+<p align="left" mode="wrap"><?php echo ($login); ?>,欢迎使用VOIP电话系统 
+<br/>
+<anchor>发起呼叫<go href="__URL__/callAB/" method="get">
+<postfield name="id_client" value="<?php echo ($id_client); ?>"/>
+</go></anchor><br/>
+<anchor>电话本<go href="__URL__/book/" method="post">
+</go></anchor>
+<br/>
+<anchor>查询余额<go href="__URL__/getCent/" method="get">
+<postfield name="id_client" value="<?php echo ($id_client); ?>"/>
+</go></anchor><br/>
+<anchor>绑定号码<go href="__URL__/bindPhone/" method="get">
+<postfield name="id_client" value="<?php echo ($id_client); ?>"/>
+</go></anchor>
+<br/>
+
+<anchor>账户充值<go href="__URL__/active/" method="get">
+</go></anchor>
+<br/>
+<anchor>充值记录<go href="__URL__/activelog/" method="post">
+</go></anchor>
+<br/>
+<anchor>校验新卡<go href="__URL__/checkCard/" method="post">
+</go></anchor>
+<br/>
+<anchor>最近通话<go href="__URL__/lastCalllog/" method="post">
+</go></anchor>
+<br/>
+<anchor>主叫变号<go href="__URL__/showCaller/" method="post">
+</go></anchor>
+<br/>
+<anchor>账户信息<go href="__URL__/userInfo/" method="post">
+<postfield name="id_client" value="<?php echo ($id_client); ?>"/>
+</go></anchor><br/>
+<anchor>修改密码<go href="__URL__/chPwd/" method="get">
+<postfield name="id_client" value="<?php echo ($id_client); ?>"/>
+</go></anchor><br/>
+
+<anchor>退出登录<go href="__URL__/logout/" method="get">
+</go></anchor>
+<br/>
+BY liugens <br/></p></card>
+</wml>

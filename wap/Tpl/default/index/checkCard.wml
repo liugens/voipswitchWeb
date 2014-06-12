@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="main" title="校验充值卡">
+<p align="left" mode="wrap">输入新卡和密码进行校验 
+<br/>
+
+卡号:<input type="text" name="cardid"  value="{$cardid}" format="*N" maxlength="13"/> <br/>
+密码:<input type="text" name="cardpwd"  value="{$called}" format="*N" maxlength="13"/> <br/>
+
+<anchor title="校验">&#x3010;校验&#x3011;
+ <br/><go method="post" href="__URL__/checkCardRet/">
+<postfield name="cardid" value="$cardid"/>
+<postfield name="cardpwd" value="$cardpwd"/>
+
+</go></anchor><br/>
+
+<include file="footer" />
+</p></card>
+</wml>

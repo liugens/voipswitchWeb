@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>voippub </TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<link href="__PUBLIC__/style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/style/js2.js"></script>
+</head>
+<body id="page">
+
+<strong>修改用户：</strong>
+<form name="form1" method="post" action="?phone={$phone}">
+<TABLE border=1>
+  <TR>
+	<TD width="115">用户手机：</TD>
+	<TD width="160">
+	  <input name="uphone" type="text" id="agtphone" value="{$phone}" size="16" maxlength="16" readonly="readonly"></TD>
+	</TR>
+<TR>
+  <TD>QQ号码：</TD>
+  <TD><input name="qq" type="text" id="qq" value="{$list.QQ}" size="12" maxlength="12"></TD>
+</TR>
+<TR>
+  <TD>Email：</TD>
+  <TD><input name="email" type="text" id="email" value="{$list.email}" size="20" maxlength="20"></TD>
+</TR>
+
+<TR>
+  <TD>&nbsp;</TD>
+  <TD><input type="submit" name="添加" id="添加" value="修改"></TD>
+</TR>
+<TR>
+	<TD>&nbsp;</TD>
+	<TD><font color="red">{$adret}</font></TD>
+	</TR>
+</TABLE>
+</form>
+
+</BODY>
+</HTML>

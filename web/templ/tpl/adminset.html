@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>管理界面</title>
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="page">
+<h2>系统信息</h2>
+<form name="form1" method="post" action="adminset.html">
+  <TABLE border=1 align="left">
+<tr>
+<th colspan="4">
+  参数设置
+</th>
+</tr>
+  <TR>
+	<TD width="125">用户页面标题：</TD>
+	<TD width="252">
+	  <input name="title" type="text" id="title" value="$$title" size="20" maxlength="20"></TD>
+	<TD colspan="2">发卡有效期：</TD>
+	</TR>
+<TR>
+	<TD>数据库IP：</TD>
+	<TD><input name="ip" type="text" id="ip" value="$$ip" size="16" maxlength="16"></TD>
+	<TD width="48">&lt;10面值</TD>
+	<TD width="142"><input name="vday5" type="text" id="vday5" value="$$vday5" size="6" maxlength="6" /></TD>
+	</TR>
+
+<TR>
+  <TD>数据库端口：</TD>
+  <TD><input name="sqlport" type="text" id="ip" value="$$sqlport" size="6" maxlength="9"></TD>
+  <TD>10-20面值</TD>
+  <TD><input name="vday10" type="text" id="vday10" value="$$vday10" size="6" maxlength="6" /></TD>
+</TR>
+<TR>
+  <TD>国内费率：</TD>
+  <TD><input name="rate" type="text" id="rate" value="$$rate" size="6" maxlength="6">
+    分</TD>
+  <TD>20-30面值</TD>
+  <TD><input name="vday20" type="text" id="vday20" value="$$vday20" size="6" maxlength="6" /></TD>
+</TR>
+<TR>
+  <TD>国际费率：</TD>
+  <TD><input name="rate2" type="text" id="rate2" value="$$irate" size="6" maxlength="6">
+    分</TD>
+  <TD>30-50面值</TD>
+  <TD><input name="vday30" type="text" id="vday30" value="$$vday30" size="6" maxlength="6" /></TD>
+</TR>
+<TR>
+  <TD>通话少于10分钟后<br>限制预约时间</TD>
+  <TD><input name="limitcall" type="text" id="limitcall" value="$$limitcall" size="5" maxlength="5" />
+    分钟</TD>
+  <TD>大于50面值</TD>
+  <TD><input name="vday50" type="text" id="vday50" value="$$vday60" size="6" maxlength="6" /></TD>
+</TR>
+<TR>
+  <TD>WEB服务端口</TD>
+  <TD><input name="webport" type="text" id="port" value="$$webport" size="6" maxlength="6"></TD>
+  <TD>必须分配SKPE</TD>
+  <TD><input name="NoSkypeSkip" type="checkbox" id="NoSkypeSkip" value="1" checked="checked" /></TD>
+</TR>
+<TR>
+  <TD>每日分钟限制</TD>
+  <TD><input name="MaxTimePerDay" type="text" id="MaxTimePerDay" value="$$maxtimeperday" size="6" maxlength="6"></TD>
+  <TD>充值成功<br>
+  发送短信</TD>
+  <TD><input name="sendsms" type="checkbox" id="sendsms" value="1" $$sendsms /></TD>
+  </TR>
+
+<TR>
+  <TD>使用重复SKYPE</TD>
+  <TD><input name="repSkype" type="checkbox" id="repSkype" value="1" $$repSkype /></TD>
+  <TD>&nbsp;</TD>
+  <TD>&nbsp;</TD>
+  </TR>
+
+
+<TR>
+  <TD>&nbsp;</TD>
+  <TD><input type="submit" name="修改" id="修改" value="修改"></TD>
+  <TD colspan="2"> $$ret</TD>
+  </TR>
+</TABLE>
+</form>
+</body>
+</html>

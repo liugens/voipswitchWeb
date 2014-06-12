@@ -1,0 +1,19 @@
+<?php if (!defined('THINK_PATH')) exit();?><?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="main" title="VOIP电话系统首页" >
+<p align="left" mode="wrap"> 
+<?php echo ($hello); ?>使用voippub:<br/>
+卡号:<input type="text" name="ids"  value=""/> <br/>
+密码:<input type="text" name="pw"  value=""/> <br/>
+<anchor title="&#x767B;&#x5F55;">&#x3010;登录&#x3011; 
+<go method="get" href="__URL__/checkLogin/">
+<postfield name="login" value="$ids"/>
+<postfield name="password" value="$pw"/>
+</go></anchor>  <br/> <anchor >&#x3010;注册&#x3011;<go method="get" href="__URL__/reg/"></go></anchor>
+<anchor >&#x3010;忘记密码&#x3011;<go method="get" href="__URL__/lostpwd/"></go></anchor><br/>
+<anchor >&#x3010;预约&#x3011;<go method="get" href="__URL__/dcall/"></go></anchor>
+<anchor >&#x3010;查余额&#x3011;<go method="get" href="__URL__/getba/"></go></anchor>
+<br/>
+BY liugens <br/></p></card>
+</wml>

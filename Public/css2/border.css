@@ -1,0 +1,91 @@
+.border {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+	background-color: #f3f3f3;
+}
+.white {
+	font-family: "ËÎÌו";
+	font-size: 9pt;
+	color: #FFFFFF;
+}
+.word {
+	font-family: "ËÎÌו";
+	font-size: 9pt;
+	color: #333333;
+}
+.border_01 {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #55965B;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #55965B;
+	
+}
+.border_02 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #55965B;
+	background-color: #f3f3f3;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #55965B;
+}
+.border_03 {
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #55965B;
+	border-left-color: #55965B;
+	font-size: 13px;
+}
+.border_04 {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #55965B;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #55965B;
+}
+
+a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #1A4A95;
+	text-decoration: none;
+	font-weight: normal;
+}
+a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #1A4A95;
+	text-decoration: none;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1A4A95;
+	text-decoration: underline;
+}
+body,td,th {
+	font-family: ËÎÌו;
+	font-size: 9pt;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}

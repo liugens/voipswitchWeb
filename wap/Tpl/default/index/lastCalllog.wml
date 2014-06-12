@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="main" title="通话记录" >
+<p align="left" mode="wrap">{$login}的最近10条通话记录,<br/>绑定号码{$phone}
+<br/>
+被叫 &#160; &#160;金额 &#160; 开始时间<br/> 
+<volist name="list" id="vo">
+{$vo.called_number} {$vo.cost} {$vo.call_start} <br/> 
+</volist><br/>
+
+<include file="footer" />
+</p></card>
+</wml>

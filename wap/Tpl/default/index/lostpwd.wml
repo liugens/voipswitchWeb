@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="lostpwd" title="忘记密码" >
+<p align="left" mode="wrap">
+<br/>
+请输入您的绑定邮箱 <br/>
+邮箱：:<input type="text" name="email"  value=""  maxlength="30"/> <br/>
+<anchor title="找回">&#x3010;找回密码&#x3011;
+ <br/><go method="post" href="__URL__/lostpwdRet/">
+
+<postfield name="email" value="$email"/>
+
+</go></anchor><br/>
+
+<include file="footer" />
+</p></card>
+</wml>

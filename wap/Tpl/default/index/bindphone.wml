@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="main" title="绑定号码" >
+<p align="left" mode="wrap">{$login},绑定号码 
+<br/>
+
+<volist name="list" id="vo">
+{$vo.phone_number} <anchor>删除<go href="__URL__/delPhone/" method="get">
+<postfield name="id" value="{$vo.id}"/>
+</go></anchor><br/> 
+</volist>电话号码:<input type="text" name="phone_number"  value=""/> <br/>
+
+<anchor title="绑定">&#x3010;绑定&#x3011;
+ <br/><go method="post" href="__URL__/bdRet/">
+<postfield name="phone_number" value="$phone_number"/>
+<postfield name="id_client" value="{$id_client}"/>
+</go></anchor><br/>
+
+<include file="footer" />
+</p></card>
+</wml>

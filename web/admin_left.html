@@ -1,0 +1,58 @@
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: 宋体;
+	font-size: 9pt;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<script language="javascript" src="../public/js2/menu.js"></script>
+<link href="../public/css/border.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="../public/js2/info.js"></script>
+<script language="javascript" src="../public/js2/operations.js"></script>
+
+<script language="javascript">
+	function exit_onclick(){
+			if(confirm("是否需要退出？")){
+				top.location="";
+				//top.window.close();
+		}
+	}
+	function openLog(sName){
+		window.open("../log.html?server=" ,"log","status=no,resizable=no,menubar=no,scrollbars=no,location=no,height=650,width=700,left=200,top=150");
+	}
+</script>
+</head>
+
+<body id="index">
+<script language="javascript" >
+MN_Head();
+
+MN_Father('我的总代','topagent','index.php/Index/topagent');
+MN_Father('增加总代','agentcz','index.php/Index/topagentcz');
+MN_Father('我的用户','alluser','index.php/Index/alluser');
+
+  		MN_Exit();
+		MN_Tail();
+		</script>
+
+		</body>
+</html>

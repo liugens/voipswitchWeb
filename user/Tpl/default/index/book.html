@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>电话本</title>
+
+</head>
+<body>
+<div class="main"><div class="msgDiv">
+<h3>{$login}的电话本 </h3>
+
+<p>
+<volist name="list" id="vo">
+{$vo.nickname} <a href="__URL__/callAB/?phone={$phone}&called={$vo.telephone_number}">{$vo.telephone_number}</a> 
+{$vo.speeddial} <a href="__URL__/delBook/?id_address_book={$vo.id_address_book}">删除</a><br/>
+
+</volist><br/>
+{$pagenum}
+<br/>
+<form class="form" name="PreIndex" method="post" action="__URL__/insertBook/">
+姓名:<input type="text" name="nickname"  value=""/> <br/>
+号码:<input type="text" name="telephone_number"  value=""/> <br/>
+短号:<input type="text" name="speeddial"  value=""/> <br/>
+<input type="hidden" name="id_client" value="{$id_client}" />
+<input name="Submit" class="submit" type="submit" value="增加"/><br/>
+<include file="footer" /></p>
+</form> 
+</div>
+</div>
+</body>
+</html>

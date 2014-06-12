@@ -1,4 +1,6 @@
 voipswitchWeb
 =============
 
-voipswitch web manage
+voipswitch web管理系统是一个voipswitch软交换系统的回拨管理网页平台，分为代理商平台和用户平台
+代理商平台可以自己创建下级代理商，发卡，给用户充值
+用户平台分为智能机平台和功能机WAP平台，可以自主修改主叫号码，通讯录，充值能功能

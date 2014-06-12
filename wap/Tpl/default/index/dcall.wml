@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="main" title="回拨预约" >
+<p align="left" mode="wrap">
+<br/>
+
+登录名:<input type="text" name="uid"  value="" format="*aN" maxlength="15"/> <br/>
+密码:   <input type="text" name="pwd"  value="" maxlength="8"/> <br/>
+主叫:   <input type="text" name="phone"  value=""/> <br/>
+被叫:   <input type="text" name="called"  value=""/> <br/>
+
+<anchor title="预约">&#x3010;预约&#x3011;
+ <br/><go method="post" href="__URL__/dcallRet/">
+<postfield name="uid" value="$uid"/>
+<postfield name="pwd" value="$pwd"/>
+<postfield name="phone" value="$phone"/>
+<postfield name="called" value="$called"/>
+
+</go></anchor><br/>
+
+<include file="footer" />
+</p></card>
+</wml>

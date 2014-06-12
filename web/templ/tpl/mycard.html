@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> skypecallback </TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="style/js2.js"></script>
+</head>
+<script language="javascript">
+var msg;
+msg="$$addmsg";
+if(msg!="") alert(msg);
+</script>
+<body id="page">
+<form name="form1" method="post" action="mycard.html">
+<TABLE width="419" border=1>
+  <TR>
+	<TD width="165">您的充值卡前缀：</TD>
+	<TD width="173">$$cardprx</TD>
+	</TR>
+  <TR>
+    <TD>卡开始序号</TD>
+    <TD><input name="start" type="text" id="start" value="$$sta" size="5" maxlength="5"></TD>
+  </TR>
+  <TR>
+  <TD>生成卡张数：</TD>
+  <TD><input name="cardnum" type="text" id="agtphone" value="1" size="4" maxlength="4"></TD>
+</TR>
+<TR>
+	<TD>金额：</TD>
+	<TD><input name="money" type="text" id="money" value="10" size="6" maxlength="6"></TD>
+	</TR>
+<TR>
+  <TD>&nbsp;</TD>
+  <TD><input type="submit" name="添加" id="添加" value="生成充值卡"></TD>
+</TR>
+</TABLE>
+</form>
+<br><font color=red><b>$$addmsg</b></font>
+<br>
+<strong>我的充值卡：<br>
+
+<TABLE border=1 onMouseOver="changeto()"  onmouseout="changeback()">
+  <TR>
+	<th width="110" >卡号</th>
+	<th width="110">密码</th>
+    <th width="100" >金额(元）</th>
+	<th width="100">有效期(天)</th>
+    <th width="150">操作</th>
+	</TR>
+$$myagent
+</TABLE>
+
+<TABLE border=1 width="640">
+  <TR>
+	<td>
+	分页:$$pagenum
+	</td>
+	</TR>
+
+</TABLE>
+</BODY>
+</HTML>

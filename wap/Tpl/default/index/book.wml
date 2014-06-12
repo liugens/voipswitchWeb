@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="main" title="通讯录" >
+<p align="left" mode="wrap">{$login}的电话本 
+<br/>
+
+<volist name="list" id="vo">
+{$vo.nickname} <anchor>{$vo.telephone_number}<go href="__URL__/callAB/" method="get"> 
+<postfield name="phone" value="{$phone}"/>
+<postfield name="called" value="{$vo.telephone_number}"/></go></anchor>
+{$vo.speeddial} <anchor>删除<go href="__URL__/delBook/" method="get">
+<postfield name="id_address_book" value="{$vo.id_address_book}"/>
+</go></anchor><br/> 
+</volist><br/>
+{$pagenum}<br/>
+姓名:<input type="text" name="nickname"  value=""/> <br/>
+号码:<input type="text" name="telephone_number"  value=""/> <br/>
+短号:<input type="text" name="speeddial"  value=""/> <br/>
+<anchor title="增加">&#x3010;增加&#x3011;
+ <br/><go method="post" href="__URL__/insertBook/">
+<postfield name="telephone_number" value="$telephone_number"/>
+<postfield name="nickname" value="$nickname"/>
+<postfield name="speeddial" value="$speeddial"/>
+<postfield name="id_client" value="{$id_client}"/>
+</go></anchor><br/>
+
+<include file="footer" />
+</p></card>
+</wml>

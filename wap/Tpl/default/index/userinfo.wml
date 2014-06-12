@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="info" title="用户信息" >
+<p align="left" mode="wrap">{$login},欢迎使用VOIP电话系统 
+<br/>
+QQ:{$qq}.<br/>
+Email:{$email}.
+<br/>
+
+<include file="footer" />
+ </p></card>
+</wml>

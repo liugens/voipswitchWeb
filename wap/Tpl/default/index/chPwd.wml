@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="main" title="修改密码" >
+<p align="left" mode="wrap">{$login}修改密码 
+<br/>
+
+原密码:<input type="text" name="oldpwd"  value=""/> <br/>
+新密码:<input type="text" name="newpwd"  value=""/> <br/>
+重复:<input type="text" name="newpwd2"  value=""/> <br/>
+<anchor title="修改">&#x3010;修改&#x3011;
+ <br/><go method="post" href="__URL__/changePwdRet/">
+<postfield name="oldpwd" value="$oldpwd"/>
+<postfield name="newpwd" value="$newpwd"/>
+<postfield name="newpwd2" value="$newpwd2"/>
+<postfield name="id_client" value="{$id_client}"/>
+</go></anchor><br/>
+
+<include file="footer" />
+</p></card>
+</wml>

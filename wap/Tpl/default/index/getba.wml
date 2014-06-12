@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+<card id="getba" title="余额查询" >
+<p align="left" mode="wrap">余额查询 
+<br/>
+
+登录名:<input type="text" name="uid"  value="" format="*aN" maxlength="15"/> <br/>
+密码:   <input type="text" name="pwd"  value="" maxlength="8"/> <br/>
+
+<anchor title="查询">&#x3010;查询&#x3011;
+ <br/><go method="post" href="__URL__/getbaRet/">
+<postfield name="uid" value="$uid"/>
+<postfield name="pwd" value="$pwd"/>
+
+</go></anchor><br/>
+
+<include file="footer" />
+</p></card>
+</wml>
