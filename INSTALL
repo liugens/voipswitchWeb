@@ -1,0 +1,12 @@
+需要先配置好IIS/APACHE +PHP+MYSQL 网页平台
+运行sqlupdate.exe建立初始总代帐号，升级部分数据库结构
+
+修改web\Conf\config.php
+user\Conf\config.php
+wap\Conf\config.php
+三个配置文件里的数据库信息和对接信息
+代理访问页面 http://ip/web/
+用户智能机访问页面 http://ip/user/
+用户功能机访问页面 http://ip/wap/
+
+问题反馈：http://www.voippub.com/forum-8-1.html
